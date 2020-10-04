@@ -6,6 +6,11 @@ Click to translate is a real time video translator for NRK TV , Youtube and othe
 
 **Current status** : test
 
+# Installation
+
+Download the zip file extract it, allow Developer mode in chrome extension and add the extension folder.
+
+Note: i will upload the extension on chrome store soon.
 
 # Why Click to translate
 
@@ -15,4 +20,4 @@ Basically, i wrote this tool because i am learning norwegian language and watchi
 
 04/10/2020   First upload on GitHub.
 
-##
+
