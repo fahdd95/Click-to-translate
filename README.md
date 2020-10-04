@@ -20,4 +20,17 @@ Basically, i wrote this tool because i am learning norwegian language and watchi
 
 04/10/2020   First upload on GitHub.
 
+##
 
+If you have any problem just tell me.
+
+You can send your suggest if you have a very good idea.
+
+You can support me by using the donation link. 
+
+
+Follow me:
+https://twitter.com/fahddaher
+
+Donation link:
+https://www.paypal.com/paypalme/fahddaher
