@@ -11,7 +11,8 @@ Click to translate is a real time video translator for NRK TV , Youtube and othe
 
 Basically, i wrote this tool because i am learning norwegian language and watching NRK TV with arabic subtitle is so important to achieve my norwegian language goal.
 
-##
 # History
 
 04/10/2020   First upload on GitHub.
+
+##
