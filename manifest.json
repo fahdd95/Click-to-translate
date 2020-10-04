@@ -1,0 +1,43 @@
+{
+  "manifest_version": 2,
+  "version": "0.1",
+  "name": "Click to translate",
+  "description": "Click to translate is a real time video translator for NRK TV and other websites, press start and after that click (Ctrl key and left click ) on any element to translate and (Ctrl key and right click ) to show the original element.",
+  "icons": {
+      "16": "img/icon16.png",
+      "32": "img/icon32.png",
+      "48": "img/icon48.png",
+      "128": "img/icon128.png"
+    },
+  
+  "permissions": [
+       "activeTab" , "tabs" 
+        ],
+ 
+ 
+  "browser_action": {
+    "default_icon": "img/icon32.png",
+    "default_popup": "html/popup.html",
+    "default_title":"Click to translate"
+  },
+    
+  "background": {
+    "scripts": [
+      "js/jquery.min.js",
+      "js/background.js"
+    ],
+      "persistent": false
+  },
+    
+  "content_scripts": [
+    {
+      "run_at": "document_idle",
+      "js": ["js/jquery.min.js", "js/contentscript.js"],
+      "matches": ["*://*/*"]
+    }
+  ],
+ 
+  "web_accessible_resources": [
+     "js/injection.js" 
+ ]
+}
