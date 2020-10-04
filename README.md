@@ -8,7 +8,7 @@ Click to translate is a real time video translator for NRK TV , Youtube and othe
 
 # Installation
 
-Download the zip file extract it, allow Developer mode in chrome extension and add the extension folder.
+Download the zip file, allow Developer mode in chrome extension, drag and drop the zip file in chrome extension manager.
 
 Note: i will upload the extension on chrome store soon.
 
