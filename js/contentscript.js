@@ -36,6 +36,7 @@ document.addEventListener("mousedown", function(event){
     if (el.classList[n] == "translate") { 
     el.classList.remove("translate");
     translatecl = true;
+    window.alert("Orginal Language");
     };
         
     }catch(err) {
@@ -45,6 +46,7 @@ document.addEventListener("mousedown", function(event){
     
     if (translatecl == false) { 
     el.classList.add("translate");
+    window.alert("Translated Language");
     };
    
  }, true); 
