@@ -1,14 +1,14 @@
 (function(){(function injection() {
   var pageLang = 'en';
-  var userLang = 'ar';
+  var userLang = navigator.language ;
 
-  var uid = '1E07F158C6FA4460B352973E9693B329';
-  var teId = 'TE_' + uid;
+  var uid = '';
+  var tranId = 'TE_' + uid;
   var cbId = 'TECB_' + uid;
 
   function show() {
     window.setTimeout(function() {
-      window[teId].showBanner(true);
+      window[tranId].showBanner(true);
     }, 10);
   }
 
@@ -22,14 +22,14 @@
     return elem;
   }
 
-  if (window[teId]) {
+  if (window[tranId]) {
     show();
   } else {
     if (!window.google || !google.translate ||
         !google.translate.TranslateElement) {
       if (!window[cbId]) {
         window[cbId] = function() {
-          window[teId] = newElem();
+          window[tranId] = newElem();
           show();
         };
       }
