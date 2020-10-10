@@ -15,7 +15,7 @@ document.addEventListener('keydown', function(event){
       }, 450 ) ;     
  
  }, true);
-
+//////// listen to the Ctrl Key ////////
  
 //////// listen to the left click ////////
 document.addEventListener("mousedown", function(event){
@@ -90,7 +90,7 @@ document.addEventListener("mousedown", function(event){
     
     
  }, true); 
-
+//////// listen to the left click ////////
 
 
 
