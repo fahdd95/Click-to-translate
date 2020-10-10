@@ -26,12 +26,16 @@ document.addEventListener("mousedown", function(event){
    
     
     var el = event.target;
- 
+    var parel = el.parentElement;
+    var parparel = parel.parentElement;
+    //console.log(parparel);
+
+    // In Normal DIV
     for (var n = 0 ; n < el.classList.length ; n++ ){ 
         
     try{ 
 
-   console.log( el.classList[n]);
+    //console.log( el.classList[n]);
    
     if (el.classList[n] == "translate") { 
     el.classList.remove("translate");
@@ -43,12 +47,48 @@ document.addEventListener("mousedown", function(event){
     console.log("Error.");
     };
     };
+    // In Normal DIV
+    
+    // In Translated DIV
+    for (var n = 0 ; n < parparel.classList.length ; n++ ){ 
+        
+    try{ 
+
+    //console.log( parparel.classList[n]);
+   
+    if (parparel.classList[n] == "translate") { 
+    parparel.classList.remove("translate");
+    translatecl = true;
+    window.alert("Orginal Language");
+    };
+        
+    }catch(err) {
+    console.log("Error.");
+    };
+    };
+    // In Translated DIV
+
     
     if (translatecl == false) { 
     el.classList.add("translate");
     window.alert("Translated Language");
     };
-   
+    
+    
+    
+    
+    //Refresh
+    try{
+    console.log("Updating");
+    var iframe = document.getElementById(":0.container");
+    var btn = iframe.contentWindow.document.getElementById(":0.confirm");
+    btn.click();
+    console.log("Updated");
+    }catch(err){console.log("Update failed");};
+    //Refresh
+    
+    
+    
  }, true); 
 
 
