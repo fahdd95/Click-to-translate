@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "version": "0.1",
   "name": "Real-time video translator",
-  "description": "Click to translate is a real time video translator for NRK TV, YouTube and other websites. Click to translate allows you to translate any element on the page by click (Ctrl-key and left-click). This tool works by Google Translate.",
+  "description": "It is a translator that uses google to translate caption or any element on the page, and works perfectly with YOUTUBE, NRKTV and almost all websites. You can translate any element on the page by pressing the start button and clicking (Ctrl-key and left click).",
   "icons": {
       "16": "img/icon16.png",
       "32": "img/icon32.png",
