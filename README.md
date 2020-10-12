@@ -20,6 +20,8 @@ Basically, i wrote this tool because i am learning norwegian language and watchi
 
 # History
 
+12/10/2020   Allow content script just when pressing start.
+
 04/10/2020   First upload on GitHub.
 
 ##
