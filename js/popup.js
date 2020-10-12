@@ -1,6 +1,7 @@
 ///////////// Start the translation service /////////////
 let StartTrans = document.getElementById('StartTrans');
    StartTrans.onclick = function() {
+   chrome.extension.sendMessage({command:"start"});
    chrome.tabs.executeScript({
           file: '/js/excute.js'
         });

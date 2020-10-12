@@ -1,8 +1,8 @@
-# Click to translate chrome extension
+# Real-time video translator (Click to translate) chrome extension
 
-**Click to translate** allows you to translate any element on the page by click (Ctrl-key and left-click).
+**Real-time video translator**
 
-**Click to translate** is also a real time video translator for NRK TV, Youtube and other websites.
+It's a translator that uses google to translate caption or any element on the page, and works perfectly with YOUTUBE, NRKTV and almost all websites.
 
 **Version Number: 0.1**
 
@@ -14,7 +14,7 @@ Download the zip file, allow Developer mode in chrome extension, drag and drop t
 
 Note: i will upload the extension on chrome store soon.
 
-# Why Click to translate
+# Why Real-time video translator (Click to translate)
 
 Basically, i wrote this tool because i am learning norwegian language and watching NRK TV with arabic subtitle is so important to achieve my norwegian language goal.
 
