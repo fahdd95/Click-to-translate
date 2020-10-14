@@ -18,7 +18,7 @@ let DefYouTube = document.getElementById('DefYouTube');
    chrome.tabs.executeScript({
           file: '/js/DefTyoutube.js'
         });
- 
+        
         window.close();
        
   };
