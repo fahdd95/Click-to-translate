@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "version": "0.1",
-  "name": "Real-time video translator",
+  "name": "Ultimate Video Translator",
   "description": "It is a translator that uses google to translate caption or any element on the page, and works perfectly with YouTube, NRKTV and almost all websites. You can translate any element on the page by pressing the start button and clicking (Ctrl-key and left click).",
   "icons": {
       "16": "img/icon16.png",
@@ -11,7 +11,7 @@
     },
   
   "permissions": [
-       "activeTab" , "tabs" , "declarativeContent" , "webNavigation" , "activeTab"
+       "activeTab" , "tabs" , "declarativeContent" , "webNavigation" , "activeTab" , "storage"
 
         ],
  
@@ -31,10 +31,6 @@
       "js/background.js"
     ],
       "persistent": true
-  },
-    
+  } 
  
-  "web_accessible_resources": [
-     "js/injection.js" 
- ]
 }

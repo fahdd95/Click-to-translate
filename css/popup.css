@@ -2,8 +2,8 @@ body {
     
     font-family: Segoe UI, Tahoma, Sans-Serif;
 	font-size:12;
-    height: 190px ; 
-    width: 300px  ; 
+    height: 390px ; 
+    width:  300px  ; 
 }
 
 
@@ -38,14 +38,22 @@ body {
 
 .divc
 {
-  padding-left: 250px;
+  padding-left: 90px;
  
 }
 
 .divd
 {
-  padding-left: 70px;
+  position: fixed; 
+  padding-top: 0px;
+  padding-left: 135px;
+}
+
+.dive
+{
+  padding-left:195px;
   padding-top: 10px;
+  position: fixed;
 }
 
 .action-button2
@@ -53,7 +61,7 @@ body {
  
  position: relative;
  padding: 10px 10px;
-        margin: 0px 2px 2px 0px;
+ margin: 0px 2px 2px 0px;
  border-radius: 3px;
  font-family: 'Lato', sans-serif;
  font-size: 12px;
@@ -66,4 +74,16 @@ width: 300px;
 height: 17px;
 border-bottom: 1px solid #5F6368;
 position: absolute;
+}
+
+
+.Row {
+    display: table;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 10px; /*Optional*/
+}
+.Column {
+    display: table-cell;
+     
 }
