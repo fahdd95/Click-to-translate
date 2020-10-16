@@ -1,33 +1,33 @@
 {
-  "manifest_version": 2,
-  "version": "0.1",
-  "name": "Ultimate Video Translator",
-  "description": "It is a translator that uses google to translate caption or any element on the page, and works perfectly with YouTube, NRKTV and almost all websites. You can translate any element on the page by pressing the start button and clicking (Ctrl-key and left click).",
-   "icons": {
-   "16": "img/16.png", 
-   "19": "img/19.png", 
-   "32": "img/32.png", 
-   "38": "img/38.png", 
-   "48": "img/48.png", 
-   "128": "img/128.png"},
-  
-  "permissions": [
-       "activeTab" , "tabs" , "declarativeContent" , "webNavigation" , "activeTab" , "storage"
+    "manifest_version": 2,
+    "version": "0.1",
+    "name": "Ultimate Video Translator",
+    "description": "It is a translator that uses google to translate caption or any element on the page, and works perfectly with YouTube, NRKTV and almost all websites. You can translate any element on the page by pressing the start button and clicking (Ctrl-key and left click).",
+    "icons": {
+        "16": "img/16.png", 
+        "19": "img/19.png", 
+        "32": "img/32.png", 
+        "38": "img/38.png", 
+        "48": "img/48.png", 
+        "128": "img/128.png"},
 
-        ],
- 
- 
-  "browser_action": {
-    "default_icon": {"19": "img/19.png", "38": "img/38.png"},
-    "default_popup": "html/popup.html",
-    "default_title":"Click to translate"
-  },
-    
-  "background": {
-    "scripts": [
-      "js/background.js"
+    "permissions": [
+        "activeTab" , "tabs" , "declarativeContent" , "webNavigation" , "activeTab" , "storage"
+
     ],
-      "persistent": true
-  } 
- 
+
+
+    "browser_action": {
+        "default_icon": {"19": "img/19.png", "38": "img/38.png"},
+        "default_popup": "html/popup.html",
+        "default_title":"Click to translate"
+    },
+
+    "background": {
+        "scripts": [
+            "js/background.js"
+        ],
+        "persistent": true
+    } 
+
 }
