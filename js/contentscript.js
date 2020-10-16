@@ -1,4 +1,6 @@
-let keyisdown = false;   // Switch
+var keyisdown = false;   // Switch
+var doubleClick = false;
+
 
 //////// listen to the Ctrl Key ////////
 document.addEventListener('keydown', function(event){
@@ -17,14 +19,48 @@ document.addEventListener('keydown', function(event){
  }, true);
 //////// listen to the Ctrl Key ////////
  
+
 //////// listen to the left click ////////
 document.addEventListener("mousedown", function(event){
-    var translatecl = false;
+  
     //right click
     if (event.button != 0){return;};
     if (keyisdown != true){return;};
-   
+    Process(event);  
+ }, true); 
+//////// listen to the left click ////////
+
+
+//////// listen to the double click ////////
+  document.addEventListener("mousedown", function(event){
+
+    // trap only right double click
+  	if( doubleClick ) {
+      const DLclick = 0;
+      if (event.button != DLclick) {
+          return ;
+      }
+
+      event.preventDefault() ;
+      doubleClick = false ;
+      //console.log("Double Click Dedected");
+      Process(event); 
+  	} else {
+      doubleClick = true ;
+
+      setTimeout( function() {
+        doubleClick = false ;
+      }, 350 ) ;
+
+  	}
+  });
+//////// listen to the double click ////////
+
+
+//////// The Hole Process ////////
+function Process(event) {
     
+    var translatecl = false;
     var el = event.target;
     var parel = el.parentElement;
     var parparel = parel.parentElement;
@@ -85,13 +121,10 @@ document.addEventListener("mousedown", function(event){
     btn.click();
     console.log("Updated");
     }catch(err){console.log("Update failed");};
-    //Refresh
+    //Refresh   
     
     
     
- }, true); 
-//////// listen to the left click ////////
-
-
-
-
+    
+};
+//////// The Hole Process ////////
