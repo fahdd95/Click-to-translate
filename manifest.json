@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "name": "Ultimate Video Translator",
 	"author": "FahdD95",
-    "description": "It is a translator that uses google to translate caption or any element on the page, and works perfectly with YouTube, NRKTV and almost all websites. You can translate any element on the page by pressing the Start button and then double-click or clicking (Ctrl-key and left click).",
+    "description": "It is a translator that uses Google to translate caption or any element on the page, and works perfectly with YouTube, NRKTV and almost all websites. You can translate any element on the page by pressing the Start button and then double-click or clicking (Ctrl-key and left click).",
     "icons": {
         "16": "img/16.png", 
         "19": "img/19.png", 
@@ -21,7 +21,7 @@
     "browser_action": {
         "default_icon": {"19": "img/19.png", "38": "img/38.png"},
         "default_popup": "html/popup.html",
-        "default_title":"Click to translate"
+        "default_title":"Double-click to translate"
     },
 
     "background": {
