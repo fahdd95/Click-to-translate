@@ -52,10 +52,13 @@ function listentolang() {
                 "language": event.detail.language 
             }
         });
-
+        
+        try{ 
         var EnableCaption = document.getElementsByClassName("ytp-subtitles-button")[0];
         EnableCaption.click();
         EnableCaption.click();
+        }catch(Err) {
+         console.log("Error"); };
 
   })();`;
         document.head.prepend(script);
