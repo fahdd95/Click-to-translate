@@ -38,17 +38,16 @@ function injectscript() {
 
 var SelectedLang = '${settings.storageSelectedLang}';
 
-function newElem() {
-var elem = new google.translate.TranslateElement({
+function TranslateElementF() {
+var Telem = new google.translate.TranslateElement({
 autoDisplay: false,
 floatPosition: 0,
-multilanguagePage: true,
-pageLanguage: 'en'
+multilanguagePage: true
 });
-return elem;
+return Telem;
 }
 
-var UserId = '';
+var UserId = ''; //Ignore User ID 
 var TranslateID = 'TE_' + UserId;
 var TECBId = 'TECB_' + UserId;
 
@@ -64,7 +63,7 @@ show();
 if (!window.google || !google.translate || !google.translate.TranslateElement) {
 if (!window[TECBId]) {
 window[TECBId] = function() {
-window[TranslateID] = newElem();
+window[TranslateID] = TranslateElementF();
 show();
 };
 }
