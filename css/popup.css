@@ -87,3 +87,20 @@ body {
     display: table-cell;
 
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: 4B88EF;
+    text-align: center;
+    font-size: 9px;
+    height: 11px;
+}
+
+.top-left {
+    position: absolute;
+    top: -9px;
+    left: 10px;
+}
