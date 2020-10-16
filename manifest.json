@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "name": "Ultimate Video Translator",
 	"author": "FahdD95",
-    "description": "It is a translator that uses Google to translate caption or any element on the page, and works perfectly with YouTube, NRKTV and almost all websites.",
+    "description": "Real-time video translator using Google Translate. Work perfectly with YouTube, NRK and other websites.",
     "icons": {
         "16": "img/16.png", 
         "19": "img/19.png", 
