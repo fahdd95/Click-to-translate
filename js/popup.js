@@ -25,30 +25,15 @@ DefYouTube.onclick = function() {
 /////////////  YouTube caption translation //////////////
 
 
+ 
 
-
-/////////////  Youtube translation injection //////////////
-let YouTube = document.getElementById('YouTube');
-YouTube.onclick = function() {
-    chrome.tabs.executeScript({
-        file: '/js/youtube.js'
-    });
-    window.close();
-
-};
-/////////////  Youtube translation injection //////////////
-
-
-
-
-/////////////  Youtube translation injection //////////////
+/////////////  Storage Selected Lang ////////////////////
 function DefConfig() {
     chrome.storage.sync.get(['storageSelectedLang'], function (settings) {
         document.getElementById('SelectedLang').value = settings.storageSelectedLang;
 
     });
-}
-/////////////  Youtube translation injection //////////////
+};
 
 
 chrome.storage.onChanged.addListener(function(changes, namespace) {
@@ -65,3 +50,4 @@ document.getElementById('SelectedLang').onchange = function() {
 
 DefConfig();
 
+/////////////  Storage Selected Lang ////////////////////
