@@ -10,9 +10,9 @@ It's a translator that uses google to translate caption or any element on the pa
 
 # Installation
 
-Download the zip file, allow Developer mode in chrome extension, drag and drop the zip file in chrome extension manager.
+From Google Webstore
 
-Note: i will upload the extension on chrome store soon.
+https://chrome.google.com/webstore/detail/ultimate-video-translator/bboamecjefgpaemgfpcjeediamdnkklc
 
 # Why Ultimate Video Translator(D-Click To Translate)
 
