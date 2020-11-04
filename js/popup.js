@@ -12,6 +12,20 @@ StartTrans.onclick = function() {
 
 
 
+
+///////////// Translate the whole page /////////////
+let wholepage = document.getElementById('wholepage');
+wholepage.onclick = function() {
+    chrome.tabs.executeScript({
+        file: '/js/wholepage.js'
+    });
+
+    window.close();
+};
+///////////// Translate the whole page /////////////
+
+
+
 /////////////  YouTube caption translation //////////////
 let DefYouTube = document.getElementById('DefYouTube');
 DefYouTube.onclick = function() {
@@ -25,7 +39,7 @@ DefYouTube.onclick = function() {
 /////////////  YouTube caption translation //////////////
 
 
- 
+
 
 /////////////  Storage Selected Lang ////////////////////
 function DefConfig() {
