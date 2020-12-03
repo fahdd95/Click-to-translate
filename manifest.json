@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "version": "0.0.4",
+  "version": "0.0.5",
   "name": "Ultimate Video Translator",
   "options_page": "html/options.html",
   "author": "FahdD95",
