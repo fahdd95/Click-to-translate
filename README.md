@@ -20,11 +20,11 @@ Basically, i wrote this tool because i am learning norwegian language and watchi
 
 # History
 
-16/10/2020   New Popup Layout
+16/10/2020 New Popup Layout
 
-12/10/2020   Allow content script just when pressing start.
+12/10/2020 Allow content script just when pressing start.
 
-04/10/2020   First upload on GitHub.
+04/10/2020 First upload on GitHub.
 
 ##
 
@@ -32,8 +32,7 @@ If you have any problem just tell me.
 
 You can send your suggest if you have a very good idea.
 
-You can support me by using the donation link. 
-
+You can support me by using the donation link.
 
 Follow me:
 https://twitter.com/fahddaher

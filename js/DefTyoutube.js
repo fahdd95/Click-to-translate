@@ -1,8 +1,8 @@
 /////////////////////////////////////////
 function ChangeCaptionLinkReq() {
-    var injectScript = document.createElement('script');
-    injectScript.type = 'text/javascript';
-    injectScript.innerHTML = `
+  var injectScript = document.createElement("script");
+  injectScript.type = "text/javascript";
+  injectScript.innerHTML = `
 (function() {
 var XmlHReq = XMLHttpRequest.prototype;
 var sendReq = XmlHReq.send;
@@ -21,28 +21,27 @@ return openReq.apply(this, arguments);
 }
 })();
 `;
-    document.head.prepend(injectScript);
+  document.head.prepend(injectScript);
 }
 /////////////////////////////////////////
 
 /////////////////////////////////////////
 function listentolang() {
-    chrome.storage.onChanged.addListener(function(changes, namespace) {
-        chrome.storage.sync.get(['storageSelectedLang'], function (settings) {
-            let event = new CustomEvent("changelangconfig", {
-                detail: {
-                    language: settings.storageSelectedLang,  
-                }
-            }
-                                       );
-            document.dispatchEvent(event);
-        });
+  chrome.storage.onChanged.addListener(function (changes, namespace) {
+    chrome.storage.sync.get(["storageSelectedLang"], function (settings) {
+      let event = new CustomEvent("changelangconfig", {
+        detail: {
+          language: settings.storageSelectedLang,
+        },
+      });
+      document.dispatchEvent(event);
     });
+  });
 
-    chrome.storage.sync.get(['storageSelectedLang'], function (settings) {
-        var script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.innerHTML = `
+  chrome.storage.sync.get(["storageSelectedLang"], function (settings) {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.innerHTML = `
 (function() {
 window.ultimateVideotranslator = {
 "language": "${settings.storageSelectedLang}",
@@ -61,27 +60,22 @@ EnableCaption.click();
 console.log("Error"); };
 
 })();`;
-        document.head.prepend(script);
-    });
+    document.head.prepend(script);
+  });
 }
 /////////////////////////////////////////
 
 /////////////////////////////////////////
 function CheckHtmlPage() {
-    if (document.body && document.head) {
-        listentolang();
-        ChangeCaptionLinkReq();
-
-    } else {
-        requestIdleCallback(CheckHtmlPage);
-    }
+  if (document.body && document.head) {
+    listentolang();
+    ChangeCaptionLinkReq();
+  } else {
+    requestIdleCallback(CheckHtmlPage);
+  }
 }
 /////////////////////////////////////////
 
 /////////////////////////////////////////
 requestIdleCallback(CheckHtmlPage);
-///////////////////////////////////////// 
-
-
-
-
+/////////////////////////////////////////

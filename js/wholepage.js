@@ -5,27 +5,25 @@ console.log("Let's start");
 //////////inject script into html//////////
 injectscript();
 console.log("script had been added");
-//////////inject script into html////////// 
-
+//////////inject script into html//////////
 
 ///////////////////////////////////////////
 function injectscript() {
-    chrome.storage.onChanged.addListener(function(changes, namespace) {
-        chrome.storage.sync.get(['storageSelectedLang'], function (settings) {
-            let event = new CustomEvent("changelangconfig", {
-                detail: {
-                    language: settings.storageSelectedLang,  
-                }
-            }
-                                       );
-            document.dispatchEvent(event);
-        });
+  chrome.storage.onChanged.addListener(function (changes, namespace) {
+    chrome.storage.sync.get(["storageSelectedLang"], function (settings) {
+      let event = new CustomEvent("changelangconfig", {
+        detail: {
+          language: settings.storageSelectedLang,
+        },
+      });
+      document.dispatchEvent(event);
     });
+  });
 
-    chrome.storage.sync.get(['storageSelectedLang'], function (settings) {
-        var script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.innerHTML = `
+  chrome.storage.sync.get(["storageSelectedLang"], function (settings) {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.innerHTML = `
 
 (function(){(function StartServ() {
 
@@ -67,7 +65,7 @@ document.getElementsByTagName('head')[0].appendChild(linkappend);
 }
 })();})(); `;
 
-        document.head.prepend(script);
-    });
+    document.head.prepend(script);
+  });
 }
 ///////////////////////////////////////////
